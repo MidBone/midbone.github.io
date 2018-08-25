@@ -21,9 +21,7 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
-
-(function($) {
-
+$(document).ready(function(){
 	/*------------------
 		Navigation
 	--------------------*/
@@ -107,8 +105,6 @@ $(window).on('load', function() {
 		items: 1,
 		autoplay: true
 	});
-	
-
 
 	/*------------------
 		Popup
@@ -118,8 +114,5 @@ $(window).on('load', function() {
 		mainClass: 'img-popup-warp',
 		removalDelay: 400,
 	});
-
-
-
-})(jQuery);
+});
 

@@ -1,0 +1,76 @@
+<!-- Courses section -->
+    <section class="admission-page spad pt-0" ng-controller="admissionController">
+        <div class="container">
+            <div class="admission-form cpad pb-0">
+                <!--<div class="csection-title text-center">
+					<h3>Candidate Profile</h3>
+				</div>-->
+                <div class="col-md-12">
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li ng-class="{'active':isPersonalDetailsVisible || isAddressVisible || isParentDetailsVisible || isEducationDetailsVisible}">Personal Details</li>
+                            <li ng-class="{'active':isAddressVisible || isParentDetailsVisible || isEducationDetailsVisible}">Address</li>
+                            <li ng-class="{'active':isParentDetailsVisible || isEducationDetailsVisible}">Parent Details</li>
+                            <li ng-class="{'active':isEducationDetailsVisible}">Education Details</li>
+                        </ul>
+						
+                        <!-- fieldsets --> 
+                        <fieldset ng-init="isPersonalDetailsVisible=true" ng-show="isPersonalDetailsVisible">
+                            <h2 class="fs-title">Personal Details</h2>
+                            <h3 class="fs-subtitle">Tell us something more about you</h3>
+                            <input type="text" name="fname" placeholder="First Name" />
+                            <input type="text" name="lname" placeholder="Last Name" />
+                            <input type="text" name="phone" placeholder="Phone" />
+                            <input type="button" name="next" ng-click="isAddressVisible=true; isPersonalDetailsVisible=false" class="next action-button" value="Next" />
+                        </fieldset>
+						
+						<fieldset ng-show="isAddressVisible">
+                            <h2 class="fs-title">Address</h2>
+                            <h3 class="fs-subtitle">Tell us something more about you</h3>
+                            <input type="text" name="Hno" placeholder="House No." />
+                            <input type="text" name="Aline1" placeholder="Add line1" />
+                            <input type="text" name="Aline2" placeholder="Add line2" />
+							<input type="text" name="City" placeholder="City" />
+							<input type="text" name="State" placeholder="State" />
+							<input type="text" name="ZCode" placeholder="Zip Code" />
+							<input type="text" name="Country" placeholder="Country" />
+                            <input type="button" name="back" ng-click="isPersonalDetailsVisible=true; isAddressVisible=false;" class="next action-button" value="Back" />
+                            <input type="button" name="next" ng-click="isParentDetailsVisible=true; isAddressVisible=false;" class="next action-button" value="Next" />
+                        </fieldset>
+						
+						<fieldset ng-show="isParentDetailsVisible">
+                            <h2 class="fs-title">Parent Details</h2>
+                            <h3 class="fs-subtitle">Tell us something more about you</h3>
+                            <input type="text" name="fname" placeholder="Father Name" />
+                            <input type="text" name="mname" placeholder="Mother Name" />
+                            <input type="text" name="foccu" placeholder="Father Occupasion" />
+							<input type="text" name="moccu" placeholder="Mother Occupasion" />
+                            <input type="button" name="back" ng-click="isParentDetailsVisible=false; isAddressVisible=true;" class="next action-button" value="Back" />
+                            <input type="button" name="next" ng-click="isEducationDetailsVisible=true; isParentDetailsVisible=false;" class="next action-button" value="Next" />
+                        </fieldset>
+						
+						
+						<fieldset ng-show="isEducationDetailsVisible">
+                            <h2 class="fs-title">Education Details</h2>
+                            <h3 class="fs-subtitle">Tell us something more about you</h3>
+                            <input type="text" name="uname1" placeholder="10th University Name" />
+                            <input type="text" name="sname1" placeholder="School Name" />
+                            <input type="text" name="fmark1" placeholder="Full Mark" />
+                            <input type="text" name="tmark1" placeholder="Total Mark Secured" />
+                            <input type="text" name="yop1" placeholder="Year off passout" />
+							<input type="text" name="uname2" placeholder="12th University Name" />
+                            <input type="text" name="sname2" placeholder="School Name" />
+                            <input type="text" name="fmark2" placeholder="Full Mark" />
+                            <input type="text" name="tmark2" placeholder="Total Mark Secured" />
+                            <input type="text" name="yop2" placeholder="Year off passout" />
+                            <input type="button" name="back" ng-click="isEducationDetailsVisible=false; isParentDetailsVisible=true;" class="next action-button" value="Back" />
+                            <input type="button" name="submit" class="next action-button" value="Submit" />
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses section end-->

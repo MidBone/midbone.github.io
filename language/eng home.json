@@ -1,0 +1,137 @@
+'en_translations' :
+{
+	'language' : 'english',
+	'header' : {
+		'changeLanguageBtn' : 'Change Language'
+	},
+	'menu' : {    
+		'home' : 'HOME',
+		'aboutUs' : 'ABOUT US',
+		'cursus' : 'COURSES',
+		'admission' : 'ADMISSION',
+		'counselling' : 'COUNSELLING'
+		'contact' : 'CONTACT'
+	},
+	'slider' : {
+		'slider1' : {
+			'header' : 'CAMPUS UNIVERSITY',
+			'content' : 'EDUCATION IS THE KEY TO UNLOCK THE GOLDEN DOOR OF FREEDOM.',
+			'footer' : 'Education is not just about going to school and getting a degree. It's about widening your
+						knowledge and absorbing the truth about life. Knowledge is power.'
+		},
+		'slider2' : {
+			'header' : 'CAMPUS UNIVERSITY',
+			'content' : 'YOUR BRIGHT FUTURE IS OUR MISSION.',
+			'footer' : 'Education is not just about going to school and getting a degree. It's about widening your
+						knowledge and absorbing the truth about life. Knowledge is power.'
+		}
+	},
+	
+	'highlights' : {
+			'header' : 'NEXT COUSRE: SALES & MARKETING ALIGNMENT',
+			'time' : 'PM',
+			'duration1' : 'DAYS',
+			'duration2' : 'HOURS',
+			'duration3' : 'MINS',
+			'duration4' : 'SECS'
+	},
+	
+	'SERVICES' :{
+		'services1' : {
+			'header' : 'OUR SERVICES',
+			'title' : 'We provides the opportunity to prepare for life',
+		},
+		'Art Studio' : {
+			'header' : 'Art Studio',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		},
+		'Great Facility' : {
+			'header' : 'Great Facility',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		},
+		'Activity Hub' : {
+			'header' : 'Activity Hub',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		},
+		'Fully Qualified' : {
+			'header' : 'Fully Qualified',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		},
+		'Flexible Schedule' : {
+			'header' : 'Flexible Schedule',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		},
+		'Chemistry Lab' : {
+			'header' : 'Chemistry Lab',
+			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
+		}
+		
+	},
+	
+	'Counter Bar' :{
+		'YEARS' : {
+			'header' : '50',
+			'title' : 'YEARS',
+		},
+		'TEACHERS' : {
+			'header' : '80',
+			'title' : 'TEACHERS',
+		},
+		'STUDENTS' : {
+			'header' : '50',
+			'title' : 'STUDENTS',
+		},
+		'LESSONS' : {
+			'header' : '800',
+			'title' : 'LESSONS',
+		}
+	},
+	'newsletter' :{
+			'header' : 'NEWSLETTER',
+			'title' : 'Subscribe and get the latest news and useful tips, advice and best offer',
+			'textbox' : 'Enter Your email',
+			'subscripbeBtn' : 'SUBSCRIBE',
+	},
+	
+		'FOOTER' :{
+		'footer1' : {
+			'title' : 'Our mission is to deliver the higher education platform and services that allow you to transform your academic delivery,
+					   student 	success and operational efficiency on your terms',
+		},
+		'footer2' : {
+			'header' : 'USEFUL LINK',
+			'home' : 'Home',
+			'aboutUs' : 'About us',
+			'services' : 'Services',
+			'events' : 'Events',
+			'features' : 'Features'
+		},
+		'footer3' : {
+			'policy' : 'Policy',
+			'term' : 'Term',
+			'help' : 'Help',
+			'faqs' : 'FAQs',
+			'sitemap' : 'Site map'
+		},
+		'footer3' : {
+			'header' : 'RECENT POST',
+			'title1' : 'Snackable study:How to break up your master's degree',
+			'date1' : '24 Mar 2018',
+			'title2' : 'Open University plans major cuts to number of staff',
+			'date1' : '24 Mar 2018'
+		},
+		'footer3' : {
+			'header' : 'CONTACT',
+			'address' : '3rd Floor, Olympia/Building-01 Bagmane Tech Park, C V Raman Nagar, Byrasandra, Bangalore - 560 093, India',
+			'phone' : '91-80-4339-8410',
+			'email' : 'contact@cmi.com',
+			'timing' : 'Monday - Friday, 08:00AM - 06:00 PM'
+		}
+		
+	},
+		'secondFooter' : { 
+		'contect1' : 'Copyright ©2018 All rights reserved',
+		'contect2' : 'This template is made with',
+		'contect2' : 'by Midbone'
+	},
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cmi">
+<head>
+	<title>Campus Management</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Campus Management">
+	<meta name="keywords" content="Campus Management">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<!--<link href="img/favicon.ico" rel="shortcut icon"/>-->
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="css/rtl/bootstrap.min.css" />-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body ng-controller="mainController">
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header section -->
+	<header class="header-section">
+		<div class="container">
+			<!-- logo -->
+			<a href="#/home" class="site-logo"><img src="img/logo.png" alt=""></a>
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+<!--			<div class="header-info">
+				<div class="hf-item">
+					<i class="fa fa-user"></i>
+					<p><span>Welcome!</span>Avinash Kumar</p>
+				</div>
+			</div>-->
+            
+			 <!-- Split button -->
+			<div class="btn-group" uib-dropdown>
+			  <button id="split-button" type="button" class="btn btn-danger">Action</button>
+			  <button type="button" class="btn btn-danger" uib-dropdown-toggle>
+				<span class="caret"></span>
+				<span class="sr-only">Split button!</span>
+			  </button>
+			  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
+				<li role="menuitem"><a href="#">Action</a></li>
+				<li role="menuitem"><a href="#">Another action</a></li>
+				<li role="menuitem"><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li role="menuitem"><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			
+			    <div class="btn-group" uib-dropdown dropdown-append-to-body>
+				  <button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+					Dropdown on Body <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+					<li role="menuitem"><a href="#">Action</a></li>
+					<li role="menuitem"><a href="#">Another action</a></li>
+					<li role="menuitem"><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li role="menuitem"><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			
+            <div class="header-info">
+                <div class="hf-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                            Change Language
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Marathi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Arabic</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+		</div>
+	</header>
+	<!-- header section end-->
+
+	<!-- Header section  -->
+	<nav class="nav-section">
+		<div class="container">
+			<div class="nav-right">
+				<a href="#"><i class="fa fa-search"></i></a>
+			</div>
+			<ul class="main-menu" ng-init="isHomeActive=true">
+				<li ng-class="{'active':isHomeActive}" ng-click="isHomeActive=true"><a href="#/home">Home</a></li>
+				<li ng-class="{'active':isAboutUsActive}" ng-click="isAboutUsActive=true"><a href="#/about">About Us</a></li>
+				<li ng-class="{'active':isEventActive}" ng-click="isEventActive=true"><a href="#/event">Event</a></li>
+				<li ng-class="{'active':isCoursesActive}" ng-click="isCoursesActive=true"><a href="#/courses">COURSES</a></li>
+				<li ng-class="{'active':isAdmissionActive}" ng-click="isAdmissionActive=true"><a href="#/admission">Admission</a></li>
+				<li ng-class="{'active':isCounsellingActive}" ng-click="isCounsellingActive=true"><a href="#/counselling">Counselling</a></li>
+				<li ng-class="{'active':isContactActive}" ng-click="isContactActive=true"><a href="#/contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Header section end -->
+
+	<div ng-view></div>
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container footer-top">
+			<div class="row">
+				<!-- widget -->
+				<div class="col-sm-6 col-lg-3 footer-widget">
+					<div class="about-widget">
+						<img src="img/logo-light.png" alt="">
+						<p>Our mission is to deliver the higher education platform and services that allow you to transform your academic delivery, student success and operational efficiency on your terms.</p>
+						<div class="social pt-1">
+							<a href=""><i class="fa fa-twitter-square"></i></a>
+							<a href=""><i class="fa fa-facebook-square"></i></a>
+							<a href=""><i class="fa fa-google-plus-square"></i></a>
+							<a href=""><i class="fa fa-linkedin-square"></i></a>
+							<a href=""><i class="fa fa-rss-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- widget -->
+				<div class="col-sm-6 col-lg-3 footer-widget">
+					<h6 class="fw-title">USEFUL LINK</h6>
+					<div class="dobule-link">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Features</a></li>
+						</ul>
+						<ul>
+							<li><a href="">Policy</a></li>
+							<li><a href="">Term</a></li>
+							<li><a href="">Help</a></li>
+							<li><a href="">FAQs</a></li>
+							<li><a href="">Site map</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- widget -->
+				<div class="col-sm-6 col-lg-3 footer-widget">
+					<h6 class="fw-title">RECENT POST</h6>
+					<ul class="recent-post">
+						<li>
+							<p>Snackable study:How to break <br> up your master's degree</p>
+							<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+						</li>
+						<li>
+							<p>Open University plans major <br> cuts to number of staff</p>
+							<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+						</li>
+					</ul>
+				</div>
+				<!-- widget -->
+				<div class="col-sm-6 col-lg-3 footer-widget">
+					<h6 class="fw-title">CONTACT</h6>
+					<ul class="contact">
+						<li><p><i class="fa fa-map-marker"></i> 3rd Floor, Olympia/Building-01
+																Bagmane Tech Park, C V Raman Nagar, 
+																Byrasandra, Bangalore - 560 093, India</p></li>
+						<li><p><i class="fa fa-phone"></i> +91-80-4339-8410</p></li>
+						<li><p><i class="fa fa-envelope"></i> contact@cmi.com</p></li>
+						<li><p><i class="fa fa-clock-o"></i> Monday - Friday, 08:00AM - 06:00 PM</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="copyright">
+			<div class="container">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://midbone.com" target="_blank">Midbone</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>		
+		</div>
+	</footer>
+	<!-- Footer section end-->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+	<script src="js/ui-bootstrap-tpls-2.1.1.min.js"></script>
+	<script src="js/angular/app.js"></script>
+	<script src="js/angular/mainController.js"></script>
+	<script src="js/angular/homeController.js"></script>
+	<script src="js/angular/admissionController.js"></script>
+	
+</body>
+</html>
