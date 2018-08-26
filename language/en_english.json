@@ -7,7 +7,7 @@
 	'menu' : {    
 		'home' : 'HOME',
 		'aboutUs' : 'ABOUT US',
-		'cursus' : 'COURSES',
+		'curses' : 'COURSES',
 		'admission' : 'ADMISSION',
 		'counselling' : 'COUNSELLING'
 		'contact' : 'CONTACT'
@@ -16,14 +16,12 @@
 		'slider1' : {
 			'header' : 'CAMPUS UNIVERSITY',
 			'content' : 'EDUCATION IS THE KEY TO UNLOCK THE GOLDEN DOOR OF FREEDOM.',
-			'footer' : 'Education is not just about going to school and getting a degree. It's about widening your
-						knowledge and absorbing the truth about life. Knowledge is power.'
+			'footer' : 'Education is not just about going to school and getting a degree. It\'s about widening your knowledge and absorbing the truth about life. Knowledge is power.'
 		},
 		'slider2' : {
 			'header' : 'CAMPUS UNIVERSITY',
 			'content' : 'YOUR BRIGHT FUTURE IS OUR MISSION.',
-			'footer' : 'Education is not just about going to school and getting a degree. It's about widening your
-						knowledge and absorbing the truth about life. Knowledge is power.'
+			'footer' : 'Education is not just about going to school and getting a degree. It\'s about widening your knowledge and absorbing the truth about life. Knowledge is power.'
 		}
 	},
 	
@@ -68,7 +66,7 @@
 		
 	},
 	
-	'Counter Bar' :{
+	'CounterBar' :{
 		'YEARS' : {
 			'header' : '50',
 			'title' : 'YEARS',
@@ -134,4 +132,66 @@
 		'contect2' : 'This template is made with',
 		'contect2' : 'by Midbone'
 	},
+		
+	/* Admission Page */
+	
+		'admissionForm' : {
+		'personalDetails' :{
+			'step' : 'PERSONAL DETAILS',
+			'title' : 'Tell us something more about you',
+			'first name' : 'First Name',
+			'last name' : 'Last Name',
+			'phone' : 'Phone'
+		},
+		'address' : {
+			'step': 'ADDRESS',
+			'houseNo' : 'House No',
+			'addLine1' : 'Add line1',
+			'addLine2' : 'Add line2',
+			'city' : 'City',
+			'state' : 'State',
+			'zipCode' : 'Zip Code',
+			'country' : 'Country'
+		},
+		'parentDetails' : {
+			'step': 'PARENT DETAILS',
+			'fatherName' : 'Father Name',
+			'motherName' : 'Mother Name',
+			'fatherOccupasion' : 'Father Occupasion',
+			'motherOccupasion' : 'Mother Occupasion'
+		},
+		'educationDetails' : {
+			'step': 'EDUCATION DETAILS',
+			'10thUniversityName' : '10th University Name',
+			'schoolName' : 'School Name',
+			'fullMark' : 'Full Mark',
+			'totalMarkSecured' : 'Total Mark Secured',
+			'yearOffPassout' : 'Year off passout',
+			'12thUniversityName' : '12th University Name',
+			'12thSchoolName' : 'School Name',
+			'12thFullMark' : 'Full Mark',
+			'12thTotalMarkSecured' : 'Total Mark Secured',
+			'12thYearOffPassout' : 'Year off passout'
+		},
+		'formBtn' : {
+			'back' : 'Back',
+			'next' : 'Next',
+			'submit' : 'Submit'
+		}
+			
+	},
+	/* Counselling Page */
+	'counsellingForm' : {
+		'counsellingDetails' :{
+			'enrolementNo' : 'Enrolement no.',
+			'phoneNo' : 'Phone no.',
+			'email' : 'Email',
+			'collageCode' : 'Collage Code',
+			'collageName' : 'Collage Name',
+			'collageAdd' : 'Collage Add',
+			'selectedBranch' : 'Selected Branch'
+		},
+		'formBtn' : {
+			'submit' : 'Submit'
+		}
 }
