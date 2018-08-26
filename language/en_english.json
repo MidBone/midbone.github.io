@@ -1,197 +1,193 @@
-'en_translations' :
 {
-	'language' : 'english',
-	'header' : {
-		'changeLanguageBtn' : 'Change Language'
-	},
-	'menu' : {    
-		'home' : 'HOME',
-		'aboutUs' : 'ABOUT US',
-		'curses' : 'COURSES',
-		'admission' : 'ADMISSION',
-		'counselling' : 'COUNSELLING'
-		'contact' : 'CONTACT'
-	},
-	'slider' : {
-		'slider1' : {
-			'header' : 'CAMPUS UNIVERSITY',
-			'content' : 'EDUCATION IS THE KEY TO UNLOCK THE GOLDEN DOOR OF FREEDOM.',
-			'footer' : 'Education is not just about going to school and getting a degree. It\'s about widening your knowledge and absorbing the truth about life. Knowledge is power.'
-		},
-		'slider2' : {
-			'header' : 'CAMPUS UNIVERSITY',
-			'content' : 'YOUR BRIGHT FUTURE IS OUR MISSION.',
-			'footer' : 'Education is not just about going to school and getting a degree. It\'s about widening your knowledge and absorbing the truth about life. Knowledge is power.'
-		}
-	},
-	
-	'highlights' : {
-			'header' : 'NEXT COUSRE: SALES & MARKETING ALIGNMENT',
-			'time' : 'PM',
-			'duration1' : 'DAYS',
-			'duration2' : 'HOURS',
-			'duration3' : 'MINS',
-			'duration4' : 'SECS'
-	},
-	
-	'SERVICES' :{
-		'services1' : {
-			'header' : 'OUR SERVICES',
-			'title' : 'We provides the opportunity to prepare for life',
-		},
-		'Art Studio' : {
-			'header' : 'Art Studio',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		},
-		'Great Facility' : {
-			'header' : 'Great Facility',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		},
-		'Activity Hub' : {
-			'header' : 'Activity Hub',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		},
-		'Fully Qualified' : {
-			'header' : 'Fully Qualified',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		},
-		'Flexible Schedule' : {
-			'header' : 'Flexible Schedule',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		},
-		'Chemistry Lab' : {
-			'header' : 'Chemistry Lab',
-			'title' : 'Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.',
-		}
-		
-	},
-	
-	'CounterBar' :{
-		'YEARS' : {
-			'header' : '50',
-			'title' : 'YEARS',
-		},
-		'TEACHERS' : {
-			'header' : '80',
-			'title' : 'TEACHERS',
-		},
-		'STUDENTS' : {
-			'header' : '50',
-			'title' : 'STUDENTS',
-		},
-		'LESSONS' : {
-			'header' : '800',
-			'title' : 'LESSONS',
-		}
-	},
-	'newsletter' :{
-			'header' : 'NEWSLETTER',
-			'title' : 'Subscribe and get the latest news and useful tips, advice and best offer',
-			'textbox' : 'Enter Your email',
-			'subscripbeBtn' : 'SUBSCRIBE',
-	},
-	
-		'FOOTER' :{
-		'footer1' : {
-			'title' : 'Our mission is to deliver the higher education platform and services that allow you to transform your academic delivery,
-					   student 	success and operational efficiency on your terms',
-		},
-		'footer2' : {
-			'header' : 'USEFUL LINK',
-			'home' : 'Home',
-			'aboutUs' : 'About us',
-			'services' : 'Services',
-			'events' : 'Events',
-			'features' : 'Features'
-		},
-		'footer3' : {
-			'policy' : 'Policy',
-			'term' : 'Term',
-			'help' : 'Help',
-			'faqs' : 'FAQs',
-			'sitemap' : 'Site map'
-		},
-		'footer3' : {
-			'header' : 'RECENT POST',
-			'title1' : 'Snackable study:How to break up your master's degree',
-			'date1' : '24 Mar 2018',
-			'title2' : 'Open University plans major cuts to number of staff',
-			'date1' : '24 Mar 2018'
-		},
-		'footer3' : {
-			'header' : 'CONTACT',
-			'address' : '3rd Floor, Olympia/Building-01 Bagmane Tech Park, C V Raman Nagar, Byrasandra, Bangalore - 560 093, India',
-			'phone' : '91-80-4339-8410',
-			'email' : 'contact@cmi.com',
-			'timing' : 'Monday - Friday, 08:00AM - 06:00 PM'
-		}
-		
-	},
-		'secondFooter' : { 
-		'contect1' : 'Copyright ©2018 All rights reserved',
-		'contect2' : 'This template is made with',
-		'contect2' : 'by Midbone'
-	},
-		
-	/* Admission Page */
-	
-		'admissionForm' : {
-		'personalDetails' :{
-			'step' : 'PERSONAL DETAILS',
-			'title' : 'Tell us something more about you',
-			'first name' : 'First Name',
-			'last name' : 'Last Name',
-			'phone' : 'Phone'
-		},
-		'address' : {
-			'step': 'ADDRESS',
-			'houseNo' : 'House No',
-			'addLine1' : 'Add line1',
-			'addLine2' : 'Add line2',
-			'city' : 'City',
-			'state' : 'State',
-			'zipCode' : 'Zip Code',
-			'country' : 'Country'
-		},
-		'parentDetails' : {
-			'step': 'PARENT DETAILS',
-			'fatherName' : 'Father Name',
-			'motherName' : 'Mother Name',
-			'fatherOccupasion' : 'Father Occupasion',
-			'motherOccupasion' : 'Mother Occupasion'
-		},
-		'educationDetails' : {
-			'step': 'EDUCATION DETAILS',
-			'10thUniversityName' : '10th University Name',
-			'schoolName' : 'School Name',
-			'fullMark' : 'Full Mark',
-			'totalMarkSecured' : 'Total Mark Secured',
-			'yearOffPassout' : 'Year off passout',
-			'12thUniversityName' : '12th University Name',
-			'12thSchoolName' : 'School Name',
-			'12thFullMark' : 'Full Mark',
-			'12thTotalMarkSecured' : 'Total Mark Secured',
-			'12thYearOffPassout' : 'Year off passout'
-		},
-		'formBtn' : {
-			'back' : 'Back',
-			'next' : 'Next',
-			'submit' : 'Submit'
-		}
-			
-	},
-	/* Counselling Page */
-	'counsellingForm' : {
-		'counsellingDetails' :{
-			'enrolementNo' : 'Enrolement no.',
-			'phoneNo' : 'Phone no.',
-			'email' : 'Email',
-			'collageCode' : 'Collage Code',
-			'collageName' : 'Collage Name',
-			'collageAdd' : 'Collage Add',
-			'selectedBranch' : 'Selected Branch'
-		},
-		'formBtn' : {
-			'submit' : 'Submit'
-		}
+   "language":"English",
+	"english" : "English",
+	"marathi" : "मराठी",
+	"hindi" : "हिंदी",
+	"arabic" : "عربى",
+   "header":{
+      "changeLanguageBtn":"Change Language"
+   },
+   "menu":{
+      "home":"HOME",
+      "aboutUs":"ABOUT US",
+      "event":"EVENT",
+      "courses":"COURSES",
+      "admission":"ADMISSION",
+      "counseling":"COUNSELING",
+      "contact":"CONTACT"
+   },
+   "slider":{
+      "slider1":{
+         "header":"CAMPUS UNIVERSITY",
+         "content":"EDUCATION IS THE KEY TO UNLOCK THE GOLDEN DOOR OF FREEDOM.",
+         "footer":"Education is not just with reference to going school or receiving a degree. It's about widening our Knowledge and engrossing truth about the life. Knowledge is power."
+      },
+      "slider2":{
+         "header":"CAMPUS UNIVERSITY",
+         "content":"YOUR BRIGHT FUTURE IS OUR MISSION.",
+         "footer":"Education is not just with reference to going school or receiving a degree. It's about widening our Knowledge and engrossing truth about the life. Knowledge is power."
+      }
+   },
+   "highlights":{
+      "header":"NEXT COUSRE: SALES & MARKETING ALIGNMENT",
+      "time":"PM",
+      "duration1":"DAYS",
+      "duration2":"HOURS",
+      "duration3":"MINS",
+      "duration4":"SECS"
+   },
+   "SERVICES":{
+      "services1":{
+         "header":"OUR SERVICES",
+         "title":"We provides the opportunity to prepare for life"
+      },
+      "artStudio":{
+         "header":"Art Studio",
+         "title":"Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania."
+      },
+      "greatFacility":{
+         "header":"Great Facility",
+         "title":"Offering a surplus of facilities that would bring ease and comfort to a students life."
+      },
+      "activityHub":{
+         "header":"Activity Hub",
+         "title":"Promising ample amount of on-campus activities aiming for a students' individual growth i.e. internal as well as external. We are a campus that values relationship and collaboration."
+      },
+      "fullyQualified":{
+         "header":"Fully Qualified",
+         "title":"Regular availability of highly qualified staff members to lend a helping hand to a student’s growth and individual development. From all over the world, we hire experts to ensure knowledge and skill transfers are done at its best unlike anyone "
+      },
+      "flexibleSchedule":{
+         "header":"Flexible Schedule",
+         "title":"In terms of class schedule, campus provides a flexible schedule for students holding day jobs. Allowing students to work or continue a professional career while pursuing an education. A hazel free classroom session without ask."
+      },
+      "laboratory":{
+         "header":"Laboratory",
+         "title":"Exposure to different laboratories to explore individual knowledge practically. We tend to give equal importance to theoretical as well as practical requirements. This will help to enrich each individual ideas and bring innovative invention in future."
+      }
+   },
+   "counterBar":{
+      "YEARS":{
+         "header":"50",
+         "title":"YEARS"
+      },
+      "TEACHERS":{
+         "header":"80",
+         "title":"TEACHERS"
+      },
+      "STUDENTS":{
+         "header":"50",
+         "title":"STUDENTS"
+      },
+      "LESSONS":{
+         "header":"800",
+         "title":"LESSONS"
+      }
+   },
+   "newsletter":{
+      "header":"NEWSLETTER",
+      "title":"Subscribe and get the latest news and useful tips, advice and best offer",
+      "textbox":"Enter Your email",
+      "subscripbeBtn":"SUBSCRIBE"
+   },
+   "FOOTER":{
+      "footer1":{
+         "title":"Our mission is to deliver the higher education platform and services that allow you to transform your academic delivery, student success and operational efficiency on your terms"
+      },
+      "footer2":{
+         "header":"USEFUL LINK",
+         "home":"Home",
+         "aboutUs":"About us",
+         "services":"Services",
+         "events":"Events",
+         "features":"Features"
+      },
+      "footer3":{
+         "policy":"Policy",
+         "term":"Term",
+         "help":"Help",
+         "faqs":"FAQs",
+         "sitemap":"Site map"
+      },
+      "footer4":{
+         "header":"RECENT POST",
+         "title1":"Snackable study:How to break up your master's degree",
+         "date1":"24 Mar 2018",
+         "title2":"Open University plans major cuts to number of staff",
+         "date2":"24 Mar 2018"
+      },
+      "footer5":{
+         "header":"CONTACT",
+         "address":"3rd Floor, Olympia/Building-01 Bagmane Tech Park, C V Raman Nagar, Byrasandra, Bangalore - 560 093, India",
+         "phone":"91-80-4339-8410",
+         "email":"contact@cmi.com",
+         "timing":"Monday - Friday, 08:00AM - 06:00 PM"
+      }
+   },
+   "secondFooter":{
+      "copyright":"Copyright",
+      "allRightsReserved" : "All rights reserved",
+      "contect2":"This template is made with",
+      "contect3":"By"
+   },
+   "admissionForm":{
+      "personalDetails":{
+         "step":"PERSONAL DETAILS",
+         "title":"Tell us something more about you",
+         "firstName":"First Name",
+         "lastName":"Last Name",
+         "phone":"Phone"
+      },
+      "address":{
+         "step":"ADDRESS",
+         "houseNo":"House No",
+         "addLine1":"Add line1",
+         "addLine2":"Add line2",
+         "city":"City",
+         "state":"State",
+         "zipCode":"Zip Code",
+         "country":"Country"
+      },
+      "parentDetails":{
+         "step":"PARENT DETAILS",
+         "fatherName":"Father Name",
+         "motherName":"Mother Name",
+         "fatherOccupasion":"Father Occupation",
+         "motherOccupasion":"Mother Occupation"
+      },
+      "educationDetails":{
+         "step":"EDUCATION DETAILS",
+         "10thUniversityName":"10th University Name",
+         "schoolName":"School Name",
+         "fullMark":"Full Mark",
+         "totalMarkSecured":"Total Mark Secured",
+         "yearOffPassout":"Year of passout",
+         "12thUniversityName":"12th University Name",
+         "12thSchoolName":"School Name",
+         "12thFullMark":"Full Mark",
+         "12thTotalMarkSecured":"Total Mark Secured",
+         "12thYearOffPassout":"Year of passout"
+      },
+      "formBtn":{
+         "back":"Back",
+         "next":"Next",
+         "submit":"Submit"
+      }
+   },
+   "counselingForm":{
+      "counselingDetails":{
+      	"header" : "COUNSELING DETAILS",
+		 "title" : "Tell us something more about you",
+         "enrolementNo":"Enrolement no.",
+         "phoneNo":"Phone no.",
+         "email":"Email",
+         "collageCode":"Collage Code",
+         "collageName":"Collage Name",
+         "collageAdd":"Collage Add",
+         "selectedBranch":"Selected Branch"
+      },
+      "formBtn":{
+         "submit":"Submit"
+      }
+   }
 }

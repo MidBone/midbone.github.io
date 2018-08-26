@@ -1,5 +1,5 @@
 {
-   "language":"عربى",
+	"language":"عربى",
 	"english" : "English",
 	"marathi" : "मराठी",
 	"hindi" : "हिंदी",
@@ -10,9 +10,10 @@
    "menu":{
       "home":"الصفحة الرئيسية",
       "aboutUs":"معلومات عنا",
-      "cursus":"الدورات",
+      "event" : "هدف",
+      "courses":"الدورات",
       "admission":"قبول",
-      "counselling":"تقديم المشورة",
+      "counseling":"تقديم المشورة",
       "contact":"اتصل"
    },
    "slider":{
@@ -60,7 +61,7 @@
          "header":"جدول مرن",
          "title":"أبجد هوز فيلم sitd المستهلك، والمطور الرئيسي لا تصل اليه. أحيانا يعيش الدعاية كرة السلة. اينيس تشغيل اثنين من القناطر."
       },
-      "chemistryLab":{
+      "laboratory":{
          "header":"مختبر الكيمياء",
          "title":"أبجد هوز فيلم sitd المستهلك، والمطور الرئيسي لا تصل اليه. أحيانا يعيش الدعاية كرة السلة. اينيس تشغيل اثنين من القناطر."
       }
@@ -87,7 +88,7 @@
       "header":"نشرة",
       "title":"اشترك واحصل على أحدث الأخبار والنصائح المفيدة والنصائح وأفضل العروض",
       "textbox":"أدخل بريدك الإلكتروني",
-      "subscripbeBtn":"الاشتراك"
+      "subscribeBtn":"الاشتراك"
    },
    "FOOTER":{
       "footer1":{
@@ -124,9 +125,10 @@
       }
    },
    "secondFooter":{
-      "contect1":"Copyright ©2018 All rights reserved",
+      "copyright":"حقوق النشر",
+      "allRightsReserved" : "كل الحقوق محفوظة",
       "contect2":"هذا القالب مصنوع",
-      "contect3":"بواسطة Midbone"
+      "contect3":"بواسطة"
    },
    "admissionForm":{
       "personalDetails":{
@@ -172,8 +174,10 @@
          "submit":"خضع"
       }
    },
-   "counsellingForm":{
-      "counsellingDetails":{
+   "counselingForm":{
+      "counselingDetails":{
+      	 "header" : "تفاصيل الاستشارات",
+		 "title" : "أخبرنا بشيء آخر عنك",
          "enrolementNo":"لا أحد",
          "phoneNo":"رقم الهاتف",
          "email":"البريد الإلكتروني",

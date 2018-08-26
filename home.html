@@ -1,4 +1,4 @@
-<section ng-controller="homeController">
+<section ng-controller="homeController" ng-init="changeLang()">
 <!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
@@ -7,10 +7,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-8">
-								<div class="hs-subtitle">CAMPUS UNIVERSITY</div>
-								<h2 class="hs-title">Education is the key to unlock the golden door of freedom.</h2>
-								<p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
-								
+								<div class="hs-subtitle">{{'slider.slider1.header' | translate}}</div>
+								<h2 class="hs-title">{{'slider.slider1.content' | translate}}</h2>
+								<p class="hs-des">{{'slider.slider1.footer' | translate}}</p>
 							</div>
 						</div>
 					</div>
@@ -21,9 +20,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-8">
-								<div class="hs-subtitle">CAMPUS UNIVERSITY</div>
-								<h2 class="hs-title">Your Bright Future Is Our Mission.</h2>
-								<p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
+								<div class="hs-subtitle">{{'slider.slider2.header' | translate}}</div>
+								<h2 class="hs-title">{{'slider.slider2.content' | translate}}</h2>
+								<p class="hs-des">{{'slider.slider2.content' | translate}}</p>
 								
 							</div>
 						</div>
@@ -44,16 +43,16 @@
 						<i class="fa fa-graduation-cap"></i>
 					</div>
 					<div class="counter-content">
-						<h2>NEXT COUSRE: Sales & Marketing Alignment</h2>
-						<p><i class="fa fa-calendar-o"></i>07:00 PM - 09:00 PM</p>
+						<h2>{{'highlights.header' | translate}}</h2>
+						<p><i class="fa fa-calendar-o"></i>07:00 PM - 09:00 {{'highlights.time' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-5 col-md-6">
 					<div class="counter">
-						<div class="counter-item"><h4>20</h4>Days</div>
-						<div class="counter-item"><h4>08</h4>Hrs</div>
-						<div class="counter-item"><h4>40</h4>Mins</div>
-						<div class="counter-item"><h4>56</h4>secs</div>
+						<div class="counter-item"><h4>20</h4>{{'highlights.duration1' | translate}}</div>
+						<div class="counter-item"><h4>08</h4>{{'highlights.duration2' | translate}}</div>
+						<div class="counter-item"><h4>40</h4>{{'highlights.duration3' | translate}}</div>
+						<div class="counter-item"><h4>56</h4>{{'highlights.duration4' | translate}}</div>
 					</div>
 				</div>
 			</div>
@@ -66,8 +65,8 @@
 	<section class="service-section spad">
 		<div class="container services">
 			<div class="section-title text-center">
-				<h3>OUR SERVICES</h3>
-				<p>We provides the opportunity to prepare for life</p>
+				<h3>{{'SERVICES.services1.header' | translate}}</h3>
+				<p>{{'SERVICES.services1.title' | translate}}</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -75,8 +74,8 @@
 						<img src="img/services-icons/1.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Art Studio</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.artStudio.header' | translate}}</h4>
+						<p>{{'SERVICES.artStudio.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -84,8 +83,8 @@
 						<img src="img/services-icons/2.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Great Facility</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.greatFacility.header' | translate}}</h4>
+						<p>{{'SERVICES.greatFacility.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -93,8 +92,8 @@
 						<img src="img/services-icons/3.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Activity Hub</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.activityHub.header' | translate}}</h4>
+						<p>{{'SERVICES.activityHub.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -102,8 +101,8 @@
 						<img src="img/services-icons/4.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Fully Qualified</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.fullyQualified.header' | translate}}</h4>
+						<p>{{'SERVICES.fullyQualified.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -111,8 +110,8 @@
 						<img src="img/services-icons/5.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Flexible Schedule</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.flexibleSchedule.header' | translate}}</h4>
+						<p>{{'SERVICES.flexibleSchedule.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 service-item">
@@ -120,8 +119,8 @@
 						<img src="img/services-icons/6.png" alt="1">
 					</div>
 					<div class="service-content">
-						<h4>Chemistry Lab</h4>
-						<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+						<h4>{{'SERVICES.laboratory.header' | translate}}</h4>
+						<p>{{'SERVICES.laboratory.title' | translate}}</p>
 					</div>
 				</div>
 			</div>
@@ -137,8 +136,8 @@
 						<i class="ti-crown"></i>
 					</div>
 					<div class="fact-text">
-						<h2>50</h2>
-						<p>YEARS</p>
+						<h2>{{'counterBar.YEARS.header' | translate}}</h2>
+						<p>{{'counterBar.YEARS.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -146,8 +145,8 @@
 						<i class="ti-briefcase"></i>
 					</div>
 					<div class="fact-text">
-						<h2>80</h2>
-						<p>TEACHERS</p>
+						<h2>{{'counterBar.TEACHERS.header' | translate}}</h2>
+						<p>{{'counterBar.TEACHERS.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -155,8 +154,8 @@
 						<i class="ti-user"></i>
 					</div>
 					<div class="fact-text">
-						<h2>500</h2>
-						<p>STUDENTS</p>
+						<h2>{{'counterBar.STUDENTS.header' | translate}}</h2>
+						<p>{{'counterBar.STUDENTS.title' | translate}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -164,8 +163,8 @@
 						<i class="ti-pencil-alt"></i>
 					</div>
 					<div class="fact-text">
-						<h2>800+</h2>
-						<p>LESSONS</p>
+						<h2>{{'counterBar.LESSONS.header' | translate}}</h2>
+						<p>{{'counterBar.LESSONS.title' | translate}}</p>
 					</div>
 				</div>
 			</div>
@@ -179,21 +178,19 @@
 			<div class="row">
 				<div class="col-md-5 col-lg-7">
 					<div class="section-title mb-md-0">
-					<h3>NEWSLETTER</h3>
-					<p>Subscribe and get the latest news and useful tips, advice and best offer.</p>
+					<h3>{{'newsletter.header' | translate}}</h3>
+					<p>{{'newsletter.title' | translate}}</p>
 				</div>
 				</div>
 				<div class="col-md-7 col-lg-5">
 					<form class="newsletter">
-						<input type="text" placeholder="Enter your email">
-						<button class="site-btn">SUBSCRIBE</button>
+						<input type="text" placeholder="{{'newsletter.textbox' | translate}}'">
+						<button class="site-btn">{{'newsletter.subscribeBtn' | translate}}'</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Newsletter section end -->	
-	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

@@ -4,16 +4,20 @@ app.config(function ($routeProvider) {
 
     $routeProvider
 		.when('/', {
-		    templateUrl: 'home.htm'
+		    templateUrl: 'home.html',
+		    controller : "homeController"
 		})
         .when('/home', {
-		    templateUrl: 'home.htm'
+		    templateUrl: 'home.html',
+		    controller : "homeController"
 		})
 		.when('/admission', {
-		    templateUrl: 'admission.htm'
+		    templateUrl: 'admission.html',
+		    controller : "admissionController"
 		})
 		.when('/counseling', {
-		    templateUrl: 'counseling.htm'
+		    templateUrl: 'counseling.html',
+		    controller : "admissionController"
 		});
 });
 
@@ -31,14 +35,6 @@ app.service('lang', function($http, $q) {
 
 app.config(['$translateProvider', 'langProvider', function ( $translateProvider, langProvider ) {
 	var meta_translations = {
-		'english' : 'English',
-		'marathi' : 'मराठी',
-		'hindi' : 'हिंदी',
-		'arabic' : 'عربى'
-	}
-	
-	var en_translations = {
-		"language" : "English",
 		'english' : 'English',
 		'marathi' : 'मराठी',
 		'hindi' : 'हिंदी',
@@ -64,10 +60,18 @@ app.config(['$translateProvider', 'langProvider', function ( $translateProvider,
 	langProvider.$get().load('arb_arabic').then(function(lang){
 		$translateProvider.translations('arb', lang);
 	});
-	$translateProvider.translations('en', en_translations);
-	$translateProvider.translations('mr', mr_translations);
-	$translateProvider.translations('hn', hn_translations);
-	$translateProvider.translations('meta', meta_translations);
+	
+	langProvider.$get().load('en_english').then(function(lang){
+		$translateProvider.translations('en', lang);
+	});
+	
+	langProvider.$get().load('hn_hindi').then(function(lang){
+		$translateProvider.translations('hn', lang);
+	});
+	
+	langProvider.$get().load('mr_marathi').then(function(lang){
+		$translateProvider.translations('mr', lang);
+	});
 	
 	$translateProvider.preferredLanguage('en');
 }]);

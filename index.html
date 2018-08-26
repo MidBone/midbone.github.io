@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="cmi">
+<html lang="en">
 <head>
 	<title>Campus Management</title>
 	<meta charset="UTF-8">
@@ -28,7 +28,7 @@
 	<![endif]-->
 
 </head>
-<body ng-controller="mainController">
+<body ng-app="cmi" ng-controller="mainController">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -53,7 +53,7 @@
                 <div class="hf-item">
                     <div class="dropdown" uib-dropdown dropdown-append-to-body>
                         <button type="button" class="btn btn-secondary" uib-dropdown-toggle>
-                            Change Language : {{'language' | translate}} <span class="caret"></span>
+                            {{'header.changeLanguageBtn' | translate}} : {{'language' | translate}} <span class="caret"></span>
                         </button>
                         <div class="dropdown-menu" uib-dropdown-menu>
                             <a class="dropdown-item" href="" ng-click="changeLanguage('en')">{{'english' | translate}}</a>
@@ -79,13 +79,13 @@
 				<a href="#"><i class="fa fa-search"></i></a>
 			</div>
 			<ul class="main-menu" ng-init="isHomeActive=true">
-				<li ng-class="{'active': isHomeActive}" ng-click="isHomeActive=true; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/home">Home</a></li>
-				<li ng-class="{'active': isAboutUsActive }" ng-click="isHomeActive=false; isAboutUsActive=true; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/about">About Us</a></li>
-				<li ng-class="{'active': isEventActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=true; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/event">Event</a></li>
-				<li ng-class="{'active': isCoursesActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=true; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/courses">Courses</a></li>
-				<li ng-class="{'active': isAdmissionActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=true; isCounsellingActive=false; isContactActive=false;"><a href="#/admission">Admission</a></li>
-				<li ng-class="{'active': isCounsellingActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=true; isContactActive=false;"><a href="#/counseling">Counseling</a></li>
-				<li ng-class="{'active': isContactActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=true;"><a href="#/contact">Contact</a></li>
+				<li ng-class="{'active': isHomeActive}" ng-click="isHomeActive=true; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/home">{{'menu.home' | translate}}</a></li>
+				<li ng-class="{'active': isAboutUsActive }" ng-click="isHomeActive=false; isAboutUsActive=true; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/about">{{'menu.aboutUs' | translate}}</a></li>
+				<li ng-class="{'active': isEventActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=true; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/event">{{'menu.event' | translate}}</a></li>
+				<li ng-class="{'active': isCoursesActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=true; isAdmissionActive=false; isCounsellingActive=false; isContactActive=false;"><a href="#/courses">{{'menu.courses' | translate}}</a></li>
+				<li ng-class="{'active': isAdmissionActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=true; isCounsellingActive=false; isContactActive=false;"><a href="#/admission">{{'menu.admission' | translate}}</a></li>
+				<li ng-class="{'active': isCounsellingActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=true; isContactActive=false;"><a href="#/counseling">{{'menu.counseling' | translate}}</a></li>
+				<li ng-class="{'active': isContactActive }" ng-click="isHomeActive=false; isAboutUsActive=false; isEventActive=false; isCoursesActive=false; isAdmissionActive=false; isCounsellingActive=false; isContactActive=true;"><a href="#/contact">{{'menu.contact' | translate}}</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -101,7 +101,7 @@
 				<div class="col-sm-6 col-lg-3 footer-widget">
 					<div class="about-widget">
 						<img src="img/logo-light.png" alt="">
-						<p>Our mission is to deliver the higher education platform and services that allow you to transform your academic delivery, student success and operational efficiency on your terms.</p>
+						<p>{{'FOOTER.footer1.title' | translate}}</p>
 						<div class="social pt-1">
 							<a href=""><i class="fa fa-twitter-square"></i></a>
 							<a href=""><i class="fa fa-facebook-square"></i></a>
@@ -113,48 +113,45 @@
 				</div>
 				<!-- widget -->
 				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">USEFUL LINK</h6>
+					<h6 class="fw-title">{{'FOOTER.footer2.header' | translate}}</h6>
 					<div class="dobule-link">
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Events</a></li>
-							<li><a href="">Features</a></li>
+							<li><a href="">{{'FOOTER.footer2.home' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer2.aboutUs' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer2.services' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer2.events' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer2.features' | translate}}</a></li>
 						</ul>
 						<ul>
-							<li><a href="">Policy</a></li>
-							<li><a href="">Term</a></li>
-							<li><a href="">Help</a></li>
-							<li><a href="">FAQs</a></li>
-							<li><a href="">Site map</a></li>
+							<li><a href="">{{'FOOTER.footer3.policy' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer3.term' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer3.help' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer3.faqs' | translate}}</a></li>
+							<li><a href="">{{'FOOTER.footer3.sitemap' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>
 				<!-- widget -->
 				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">RECENT POST</h6>
+					<h6 class="fw-title">{{'FOOTER.footer4.header' | translate}}</h6>
 					<ul class="recent-post">
 						<li>
-							<p>Snackable study:How to break <br> up your master's degree</p>
-							<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+							<p>{{'FOOTER.footer4.title1' | translate}}</p>
+							<span><i class="fa fa-clock-o"></i>{{'FOOTER.footer4.date1' | translate}}</span>
 						</li>
 						<li>
-							<p>Open University plans major <br> cuts to number of staff</p>
-							<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+							<p>{{'FOOTER.footer4.title2' | translate}}</p>
+							<span><i class="fa fa-clock-o"></i>{{'FOOTER.footer4.date2' | translate}}</span>
 						</li>
 					</ul>
 				</div>
 				<!-- widget -->
 				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">CONTACT</h6>
+					<h6 class="fw-title">{{'FOOTER.footer5.header' | translate}}</h6>
 					<ul class="contact">
-						<li><p><i class="fa fa-map-marker"></i> 3rd Floor, Olympia/Building-01
-																Bagmane Tech Park, C V Raman Nagar, 
-																Byrasandra, Bangalore - 560 093, India</p></li>
-						<li><p><i class="fa fa-phone"></i> +91-80-4339-8410</p></li>
-						<li><p><i class="fa fa-envelope"></i> contact@cmi.com</p></li>
-						<li><p><i class="fa fa-clock-o"></i> Monday - Friday, 08:00AM - 06:00 PM</p></li>
+						<li><p><i class="fa fa-map-marker"></i>{{'FOOTER.footer5.address' | translate}}</p></li>
+						<li><p><i class="fa fa-phone"></i> {{'FOOTER.footer5.phone' | translate}}</p></li>
+						<li><p><i class="fa fa-envelope"></i> {{'FOOTER.footer5.email' | translate}}</p></li>
 					</ul>
 				</div>
 			</div>
@@ -163,7 +160,7 @@
 		<div class="copyright">
 			<div class="container">
 				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://midbone.com" target="_blank">Midbone</a>
+{{'secondFooter.copyright' | translate}} &copy;<script>document.write(new Date().getFullYear());</script> {{'secondFooter.allRightsReserved' | translate}} | {{'secondFooter.contect2' | translate}} <i class="fa fa-heart-o" aria-hidden="true"></i> {{'secondFooter.contect3' | translate}} <a href="http://midbone.com" target="_blank">MidBone</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>		
 		</div>
@@ -171,16 +168,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- Footer section end-->
 
 	<!--====== Javascripts & Jquery ======-->
+	
 	<script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	
+    
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
 	<script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
 	<script src="js/ui-bootstrap-tpls-2.1.1.min.js"></script>
 	<script src="js/angular-translate.2.5.0.js"></script>
-	<!-- <script data-require="angular-translate@*" data-semver="2.5.0" src="https://cdn.rawgit.com/angular-translate/bower-angular-translate/2.5.0/angular-translate.js"></script> -->
 	<script src="js/angular/app.js"></script>
 	<script src="js/angular/mainController.js"></script>
 	<script src="js/angular/homeController.js"></script>
