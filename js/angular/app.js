@@ -11,6 +11,9 @@ app.config(function ($routeProvider) {
 		})
 		.when('/admission', {
 		    templateUrl: 'admission.htm'
+		})
+		.when('/counseling', {
+		    templateUrl: 'counseling.htm'
 		});
 });
 
