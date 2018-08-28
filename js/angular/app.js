@@ -34,28 +34,6 @@ app.service('lang', function($http, $q) {
 });
 
 app.config(['$translateProvider', 'langProvider', function ( $translateProvider, langProvider ) {
-	var meta_translations = {
-		'english' : 'English',
-		'marathi' : 'मराठी',
-		'hindi' : 'हिंदी',
-		'arabic' : 'عربى'
-	}
-	
-	var mr_translations = {
-	    "language" : 'मराठी',
-	    'english' : 'English',
-		'marathi' : 'मराठी',
-		'hindi' : 'हिंदी',
-		'arabic' : 'عربى'  
-	}
-	
-	var hn_translations = {
-	    "language" : "हिंदी",
-	    'english' : 'English',
-		'marathi' : 'मराठी',
-		'hindi' : 'हिंदी',
-		'arabic' : 'عربى'  
-	}
 	
 	langProvider.$get().load('arb_arabic').then(function(lang){
 		$translateProvider.translations('arb', lang);

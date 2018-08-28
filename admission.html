@@ -19,22 +19,74 @@
                         <fieldset ng-init="isPersonalDetailsVisible=true" ng-show="isPersonalDetailsVisible">
                             <h2 class="fs-title">{{'admissionForm.personalDetails.step' | translate}}</h2>
                             <h3 class="fs-subtitle">{{'admissionForm.personalDetails.title' | translate}}</h3>
-                            <input type="text" name="fname" placeholder="{{'admissionForm.personalDetails.firstName' | translate}}" />
-                            <input type="text" name="lname" placeholder="{{'admissionForm.personalDetails.lastName' | translate}}" />
-                            <input type="text" name="phone" placeholder="Phone" />
+                          <div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.personalDetails.firstName' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.personalDetails.lastName' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+                           </div>
+						   <div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.personalDetails.phone' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.personalDetails.email' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							</div>
                             <input type="button" name="next" ng-click="isAddressVisible=true; isPersonalDetailsVisible=false;" class="next action-button" value="{{'admissionForm.formBtn.next' | translate}}" />
                         </fieldset>
 						
 						<fieldset ng-show="isAddressVisible">
                             <h2 class="fs-title">{{'admissionForm.address.step' | translate}}</h2>
                             <h3 class="fs-subtitle">{{'admissionForm.personalDetails.title' | translate}}</h3>
-                            <input type="text" name="Hno" placeholder="{{'admissionForm.address.houseNo' | translate}}" />
-                            <input type="text" name="Aline1" placeholder="{{'admissionForm.address.addLine1' | translate}}" />
-                            <input type="text" name="Aline2" placeholder="{{'admissionForm.address.addLine2' | translate}}" />
-							<input type="text" name="City" placeholder="{{'admissionForm.address.city' | translate}}" />
-							<input type="text" name="State" placeholder="{{'admissionForm.address.state' | translate}}" />
-							<input type="text" name="ZCode" placeholder="{{'admissionForm.address.zipCode' | translate}}" />
-							<input type="text" name="Country" placeholder="{{'admissionForm.address.country' | translate}}" />
+							
+							<div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.houseNo' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.addLine1' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="form-group col-sm-12">
+							  <label for="usr">{{'admissionForm.address.addLine2' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							
+							</div>
+							
+							<div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.city' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.state' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.zipCode' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'admissionForm.address.country' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							</div>
+
                             <input type="button" name="back" ng-click="isPersonalDetailsVisible=true; isAddressVisible=false;" class="next action-button" value="{{'admissionForm.formBtn.back' | translate}}" />
                             <input type="button" name="next" ng-click="isParentDetailsVisible=true; isAddressVisible=false;" class="next action-button" value="{{'admissionForm.formBtn.next' | translate}}" />
                         </fieldset>
@@ -42,10 +94,28 @@
 						<fieldset ng-show="isParentDetailsVisible">
                             <h2 class="fs-title">{{'admissionForm.parentDetails.step' | translate}}</h2>
                             <h3 class="fs-subtitle">{{'admissionForm.personalDetails.title' | translate}}</h3>
-                            <input type="text" name="fname" placeholder="{{'admissionForm.parentDetails.fatherName' | translate}}" />
-                            <input type="text" name="mname" placeholder="{{'admissionForm.parentDetails.motherName' | translate}}" />
-                            <input type="text" name="foccu" placeholder="{{'admissionForm.parentDetails.fatherOccupasion' | translate}}" />
-							<input type="text" name="moccu" placeholder="{{'admissionForm.parentDetails.motherOccupasion' | translate}}" />
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.parentDetails.fatherName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.parentDetails.motherName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.parentDetails.fatherOccupasion' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.parentDetails.motherOccupasion' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							
                             <input type="button" name="back" ng-click="isParentDetailsVisible=false; isAddressVisible=true;" class="next action-button" value="{{'admissionForm.formBtn.back' | translate}}" />
                             <input type="button" name="next" ng-click="isEducationDetailsVisible=true; isParentDetailsVisible=false;" class="next action-button" value="{{'admissionForm.formBtn.next' | translate}}" />
                         </fieldset>
@@ -53,16 +123,62 @@
 						<fieldset ng-show="isEducationDetailsVisible">
                             <h2 class="fs-title">{{'admissionForm.educationDetails.step' | translate}}</h2>
                             <h3 class="fs-subtitle">{{'admissionForm.personalDetails.title' | translate}}</h3>
-                            <input type="text" name="uname1" placeholder="{{'admissionForm.educationDetails.10thUniversityName' | translate}}" />
-                            <input type="text" name="sname1" placeholder="{{'admissionForm.educationDetails.schoolName' | translate}}" />
-                            <input type="text" name="fmark1" placeholder="{{'admissionForm.educationDetails.fullMark' | translate}}" />
-                            <input type="text" name="tmark1" placeholder="{{'admissionForm.educationDetails.totalMarkSecured' | translate}}" />
-                            <input type="text" name="yop1" placeholder="{{'admissionForm.educationDetails.yearOffPassout' | translate}}" />
-							<input type="text" name="uname2" placeholder="{{'admissionForm.educationDetails.12thUniversityName' | translate}}" />
-                            <input type="text" name="sname2" placeholder="{{'admissionForm.educationDetails.12thSchoolName' | translate}}" />
-                            <input type="text" name="fmark2" placeholder="{{'admissionForm.educationDetails.12thFullMark' | translate}}" />
-                            <input type="text" name="tmark2" placeholder="{{'admissionForm.educationDetails.12thTotalMarkSecured' | translate}}" />
-                            <input type="text" name="yop2" placeholder="{{'admissionForm.educationDetails.12thYearOffPassout' | translate}}" />
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.10thUniversityName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.schoolName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.fullMark' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.totalMarkSecured' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.yearOffPassout' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.12thUniversityName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.12thSchoolName' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.12thFullMark' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.12thTotalMarkSecured' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+								<div class="form-group col-sm-6">
+								  <label for="usr">{{'admissionForm.educationDetails.12thYearOffPassout' | translate}}</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+                            
                             <input type="button" name="back" ng-click="isEducationDetailsVisible=false; isParentDetailsVisible=true;" class="next action-button" value="{{'admissionForm.formBtn.back' | translate}}" />
                             <input type="button" name="submit" class="next action-button" value="{{'admissionForm.formBtn.submit' | translate}}" />
                         </fieldset>
