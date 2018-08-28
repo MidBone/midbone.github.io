@@ -127,7 +127,7 @@
    "secondFooter":{
       "copyright":"Copyright",
       "allRightsReserved" : "All rights reserved",
-      "contect2":"This template is made with",
+      "contect2":"This template is designed with",
       "contect3":"By"
    },
    "admissionForm":{
@@ -135,7 +135,7 @@
          "step":"PERSONAL DETAILS",
          "title":"Tell us something more about you",
          "firstName":"First Name",
-         "lastName":"Last Name",
+         "email":"Email",
          "phone":"Phone"
       },
       "address":{
