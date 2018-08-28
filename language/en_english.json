@@ -135,7 +135,7 @@
          "step":"PERSONAL DETAILS",
          "title":"Tell us something more about you",
          "firstName":"First Name",
-         "lastName":"Last Name",
+         "email":"Email",
          "phone":"Phone"
       },
       "address":{
