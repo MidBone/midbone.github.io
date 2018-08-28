@@ -112,6 +112,9 @@ ol {
     font-size: 13px;
     text-align: right;
 }
+#msform input[type='button'] {
+	text-align:center;
+}
 
 #msform input:focus, #msform textarea:focus {
     -moz-box-shadow: none !important;
