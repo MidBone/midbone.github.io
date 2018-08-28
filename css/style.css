@@ -90,8 +90,10 @@ ol {
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
     box-sizing: border-box;
-    width: 100%;
-    margin: 0 0%;
+    /* width: 100%; */
+    /* margin: 0 0%; */
+	width: 64%;
+    margin: 0 auto;
 
     /*stacking fieldsets above each other
     position: relative;*/
@@ -99,7 +101,7 @@ ol {
 
 /*inputs*/
 #msform input, #msform textarea {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 0px;
     margin-bottom: 10px;
@@ -153,6 +155,11 @@ ol {
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+#msform .form-group {
+	text-align: left;
+	font-size: 13px;
 }
 
 /*headings*/
@@ -1055,7 +1062,6 @@ ol {
 	border-color: #f6783a;
 	color: #fff;
 }
-
 
 /*------------------
 	Responsive
