@@ -10,13 +10,48 @@
                     <fieldset ng-init="isPersonalDetailsVisible=true" ng-show="isPersonalDetailsVisible">
                         <h2 class="fs-title">{{'counselingForm.counselingDetails.header' | translate}}</h2>
                         <h3 class="fs-subtitle">{{'counselingForm.counselingDetails.title' | translate}}</h3>
-                        <input type="text" name="eno" placeholder="{{'counselingForm.counselingDetails.enrolementNo' | translate}}" />
-                        <input type="text" name="phno" placeholder="{{'counselingForm.counselingDetails.phoneNo' | translate}}" />
-                        <input type="text" name="email" placeholder="{{'counselingForm.counselingDetails.email' | translate}}" />
-			<input type="text" name="clgcode" placeholder="{{'counselingForm.counselingDetails.collageCode' | translate}}" />
-			<input type="text" name="clgname" placeholder="{{'counselingForm.counselingDetails.collageName' | translate}}" />
-			<input type="text" name="clgadd" placeholder="{{'counselingForm.counselingDetails.collageAdd' | translate}}" />
-			<input type="text" name="sbranch" placeholder="{{'counselingForm.counselingDetails.selectedBranch' | translate}}" />
+						
+						<div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'counselingForm.counselingDetails.enrolementNo' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'counselingForm.counselingDetails.phoneNo' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'counselingForm.counselingDetails.email' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+							  <label for="usr">{{'counselingForm.counselingDetails.collageCode' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+						</div>
+						
+						<div class="row">
+						<div class="form-group col-sm-6">
+							  <label for="usr">{{'counselingForm.counselingDetails.collageName' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							<div class="form-group col-sm-6">
+								<label for="usr">{{'counselingForm.counselingDetails.selectedBranch' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+						</div>
+						
+						<div class="row">
+						<div class="form-group col-sm-12">
+							  <label for="usr">{{'counselingForm.counselingDetails.collageAdd' | translate}}</label>
+							  <input type="text" class="form-control" id="usr">
+							</div>
+							
+						</div>
+						
+			
                         <input type="button" name="next" ng-click="isAddressVisible=true; isPersonalDetailsVisible=false" class="next action-button" value="{{'counselingForm.formBtn.submit' | translate}}" />
                     </fieldset>
                 </form>
